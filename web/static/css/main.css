@@ -1,0 +1,299 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+*:focus {
+  outline: none;
+}
+
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display:flex;
+  height: 100vh; 
+  background: #0066ff;
+  color: white;
+  padding: 4em;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper h1 {
+  font-weight: 300 !important;
+  text-align: center !important;
+  width: 50vw;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  font-family: 'Montserrat';
+}
+
+input[type="file"] {
+ display: none;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 5vh;
+}
+tr {
+  text-align: left;
+  color: black;
+}
+
+th {
+  font-weight: 500;
+}
+
+tr {
+  color: #585858;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+#wrap{
+    max-width: 30vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 2em;
+	padding-left: 1em;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.6; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  pacity: 0.6;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+  pacity: 0.6;
+}
+
+
+.query {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 2em;
+  width: 50vw;
+  color: white;
+  font-size: 1.5em;
+  padding-bottom: 4%;
+}
+
+.search {
+    padding: 0.8em 1.5em;
+    font-size: 1.5em;
+    border-radius: 35px;
+    border: none;
+    width: 25vw;
+    margin-top: 5vh;
+	background: white;
+}
+
+.loading {
+	display: none;
+	color: white;
+	font-weight: 400;
+	font-size: 1.5em;
+	position: fixed;
+    bottom: 0;
+	flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    width: 100vw;
+    padding: 1em;
+}
+
+.loading h4 {
+   font-weight: 400;
+}
+
+.loading-icon {
+   padding: 1em;
+   padding-right: 0;
+}
+
+
+.collection, .collection-w {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+.collection a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+}
+
+.collection-w a{
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+}
+
+.light {
+  background: white;
+  color: #0066ff;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: baseline;
+  line-height: 3em;
+}
+
+.light h1  {
+  width: auto;
+}
+.light h2 {
+  font-weight: 500;	
+}
+
+.upload {
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.upload-icon {
+font-size: 2em;
+}
+
+.upload-file{
+  display: inline-block;
+  width: 40vw;
+  background: #f5f4f4;
+  border: 1px solid #999;
+  border-radius: 35px;
+  margin-right: 5em;
+  cursor: pointer;
+  padding: 0.3em 2em;
+  font-weight: 600;
+}
+.upload-button{
+  padding: 1.3em 2em;
+  font-size: 1em;
+  border-radius: 35px;
+  border: 1px solid white;
+  width: auto;
+  background: #0066ff;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+}
+
+.home {
+  padding: 0.3em 2em;
+  font-size: 1em;
+  border-radius: 35px;
+  border: 1px solid #0066ff;
+  width: auto;
+  background: white;
+  color: #0066ff;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  margin-left: 2em;
+}
+
+.home-button .home {
+  padding: 1.2em 3em;
+  margin-top: 6vh;
+  margin-top: 10vh;
+  display: flex;
+}
+
+.tip {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #4c4c4c;
+  margin-left: 2em;
+}
+
+#extraction-load {
+  display: none;
+  margin-top: 10vh;
+  font-weight: 500;
+  color: #555
+}
+
+#extraction-result {
+  display: none;
+  margin-top: 10vh;
+  font-weight: 500;
+  color: #555
+}
+
+#extraction-content {
+  display: none;
+  background: #f5f4f4;
+  padding: 1em;
+  line-height: 2.5em;
+  width: 70vw;
+  font-size: 1.2em;
+  border-radius: 10px;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+
+.count {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+
+.refresh {
+  background: #0066ff;
+  border-radius: 35px;
+  padding: 0.2em 2em;
+  margin-top: 10vh;
+  font-weight: 500;
+}
+
+.refresh a {
+  color: white;
+}

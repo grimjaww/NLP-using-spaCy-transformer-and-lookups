@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Momentomore</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-- application content here -->
+  <div class="wrapper">
+    <h1>Using <b>Natural Language Processing </b>to search and filter a collection of resumes.. </h1>
+	<form autocomplete="off" action = "/" method = "POST">
+         <p><input class="query" type="text" name="query" placeholder="🔍 ex. Get candidates with skills in Tensorflow.." /></p>
+         <p><input class="search" type="submit" value="Search" /></p>
+    </form>
+	<div class="loading"><h4>Gathering resumes..</h4><div class="loading-icon">⏳</div></div>
+	<span class="collection"><a href="/collection">📤 Upload document</a></span>
+  </div>
+  
+  <script>
+	document.querySelector(".search").addEventListener("click", () => {
+	    document.querySelector(".loading").style.display = "flex";
+	})
+  </script>
+</body>
+
+</html>
