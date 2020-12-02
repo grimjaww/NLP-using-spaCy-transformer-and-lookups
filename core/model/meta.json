@@ -1,0 +1,52 @@
+{
+  "lang":"en",
+  "name":"named_entity_recognizer",
+  "version":"0.0.0",
+  "spacy_version":">=2.3.4",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"6fb3e4796",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":"spacy_pretrained_vectors"
+  },
+  "pipeline":[
+    "ner"
+  ],
+  "factories":{
+    "ner":"ner"
+  },
+  "labels":{
+    "ner":[
+      "Address",
+      "Can Relocate to",
+      "Certifications",
+      "College",
+      "Email Address",
+      "Graduation Year",
+      "Location",
+      "Relocate to",
+      "Rewards and Achievements",
+      "Skills",
+      "UNKNOWN",
+      "University",
+      "Years of Experience",
+      "abc",
+      "companies",
+      "des",
+      "education",
+      "links",
+      "name",
+      "profile",
+      "projects",
+      "qualification",
+      "state",
+      "training"
+    ]
+  }
+}
